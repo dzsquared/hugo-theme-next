@@ -16,11 +16,6 @@
       </li>
     </ul>
     <div class="sidebar-panel-container">
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-        <div class="post-toc animated">{{ .TableOfContents }}</div>
-      </div>
-      <!--/noindex-->
       <div class="site-overview-wrap sidebar-panel">
         {{- partialCached "sidebar/overview.html" . -}}
         
@@ -29,6 +24,11 @@
           {{ partialCached $custom . }}
         {{- end }}
       </div>
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated">{{ .TableOfContents }}</div>
+      </div>
+      <!--/noindex-->
     </div>
    
   </div>

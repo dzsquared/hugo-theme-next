@@ -38,9 +38,9 @@ SbCatesTitle:
 SbTagsTitle:
   other: "Tags"
 TableOfContents:
-  other: "TOC"
+  other: "Post Contents"
 SiteOverview:
-  other: "Overview"
+  other: "Site Info"
 RSSLable:
   other: "RSS Subscribe"
 CCLinkTitle:
