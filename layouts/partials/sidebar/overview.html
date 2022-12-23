@@ -48,7 +48,12 @@
 {{- $url := trim (index $vals 1) " " }}
 {{- $icon := trim (index $vals 2) " " }}
   <span class="links-of-social-item">
-    <a href="{{ $url }}" title="{{ $name }} → {{ $url }}" rel="noopener" {{- if and $si.enable $si.transition }} class="hvr-icon-pulse" {{- end }} target="_blank">
+    <a href="{{ $url }}" title="{{ $name }} → {{ $url }}" 
+      {{- if and $si.enable $si.transition }} class="hvr-icon-pulse" {{- end }}
+      {{if eq $name "Mastodon" }}rel="me"
+      {{ else }}rel="noopener"
+      {{ end }} 
+      target="_blank">
       {{- if $si.enable }}
       <i class="{{- $icon }} fa-fw {{ if $si.transition }} hvr-icon {{ end }}"></i>
       {{- end }}
