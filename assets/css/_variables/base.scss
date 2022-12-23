@@ -219,8 +219,8 @@ $content-mobile-padding         : 8px;
 
 // Headband
 // --------------------------------------------------
-$headband-height                : 3px;
-$headband-bg                    : var(--theme-color);
+$headband-height                : 12px;
+$headband-bg                    : linear-gradient(90deg, var(--theme-color) 35%, $blue-bright);
 
 
 // Section Header
@@ -272,7 +272,7 @@ $site-author-name-margin              : 5px 0 0;
 $site-author-name-color               : $whitesmoke;
 $site-author-name-weight              : normal;
 
-$site-description-font-size           : $font-size-medium;
+$site-description-font-size           : $font-size-smallest;
 $site-description-color               : $grey-dark;
 $site-description-margin-top          : 5px;
 

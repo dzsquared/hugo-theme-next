@@ -5,13 +5,13 @@
     text-align: center;
     @include post-card();
     border-left: none;
-    border-bottom: #46b404 solid 5px;
+    border-bottom: #00A7C1 solid 5px;
 
     .social-list {
       @include flex-wrap();
 
       .social-item {
-        margin: .5em 2em;
+        margin: .1em 2em;
 
         a:hover {
           font-weight: bold;
@@ -28,11 +28,11 @@
         text-align: center;
 
         .icon {
-          font-size: 1.75em;
+          font-size: 1.2em;
         }
 
         .label {
-          display: block;
+          // display: block;
           font-size: 14px;
         }
       }
