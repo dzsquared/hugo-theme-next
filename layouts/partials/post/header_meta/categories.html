@@ -5,11 +5,11 @@
     <i class="far fa-folder-open"></i>
   </span>
   <span class="post-meta-item-text">{{- print (T "PostCategory") (T "SymbolColon") -}}</span>
-  {{- range (first 1 .) }}
+  {{- range (first 10 .) }}
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
     <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" itemprop="url" rel="index">
       <span itemprop="name">{{- . -}}</span>
-    </a>
+    </a>;
   </span>
   {{- end }}
 </span>
